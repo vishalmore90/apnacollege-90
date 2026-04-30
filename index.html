@@ -1,1 +1,54 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small HTML Program</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f9fc;
+        color: #333;
+        margin: 0;
+        padding: 2rem;
+      }
+      .card {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        margin-top: 0;
+      }
+      button {
+        margin-top: 1rem;
+        padding: 0.75rem 1.25rem;
+        border: none;
+        border-radius: 6px;
+        background: #0078d4;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #005ea6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Simple HTML Program</h1>
+      <p>This is a small HTML program that shows a message and updates it when you click the button.</p>
+      <p id="message">Click the button to see a response.</p>
+      <button onclick="showMessage()">Click me</button>
+    </div>
+    <script>
+      function showMessage() {
+        const message = document.getElementById('message');
+        message.textContent = 'Hello from your small HTML program!';
+      }
+    </script>
+  </body>
+</html>
